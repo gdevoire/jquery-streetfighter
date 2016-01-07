@@ -28,6 +28,28 @@ $(document).ready(function() {
       $('.ryu-ready').show();
     });
 
+    $('body').keydown(function(x){
+      if(event.which == 88) {
+        $('.ryu-cool').show();
+        $('.ryu-ready').hide();
+        $('.ryu-throwing').hide();
+        $('.ryu-still').hide();
+
+      }
+    });
+
+    $('body').keyup(function(x){
+      if(event.which == 88) {
+        $('.ryu-cool').hide();
+        $('.ryu-still').show();
+
+      }
+    });
+
+
+
+
+
 });
 
     function playhadouken () {
